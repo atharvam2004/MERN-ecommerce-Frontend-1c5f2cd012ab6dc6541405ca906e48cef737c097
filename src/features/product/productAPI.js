@@ -23,6 +23,7 @@ export function fetchProductsByFilters(filter,sort,pagination) {
   // sort = {_sort:"price",_order="desc"}
   // pagination = {_page:1,_limit=10} 
   // TODO : on server we will support multi values in filter
+  console.log(filter);
   let queryString = '';
   for(let key in filter){
     const categoryValues = filter[key];
